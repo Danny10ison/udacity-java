@@ -21,7 +21,7 @@ public class SimplyCalculator {
             System.out.println( num1 + " + " + num2 + " = " + sumNumbers(num1,num2));
 
         } catch (Exception ex){
-            ex.getLocalizedMessage();
+            ex.printStackTrace();
         } finally {
             System.out.println("Wrong input");
             scanner.close();
