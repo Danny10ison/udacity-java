@@ -9,7 +9,8 @@ public class SimplyCalculator {
     }
 
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
+        Scanner scanner = new Scanner(System.in);
+        try {
             System.out.println("Simple CLI calculator");
             System.out.println("--------------------------\n");
             System.out.println("Enter first number");
@@ -22,7 +23,7 @@ public class SimplyCalculator {
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {
-            System.out.println("Wrong input");
+            scanner.close();
         }
     }
 }
