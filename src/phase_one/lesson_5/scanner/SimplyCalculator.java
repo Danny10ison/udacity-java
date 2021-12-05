@@ -12,7 +12,7 @@ public class SimplyCalculator {
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.println("Simple CLI calculator");
-            System.out.println("--------------------------\n");
+            System.out.println("---------------------\n");
             System.out.println("Enter first number");
             int num1 = scanner.nextInt();
             System.out.println("Enter second number");
